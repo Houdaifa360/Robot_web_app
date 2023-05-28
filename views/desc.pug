@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  div.row
+    div.col-12.px-0
+      h3 
+        b Mobile Surveillance Robot
+      p.description 
+        | The surveillance mobile robot is a versatile and intelligent robotic system designed for monitoring and surveillance tasks in various environments. It is powered by the Robot Operating System (ROS) framework and utilizes the computational capabilities of a Raspberry Pi single-board computer.<br>
+        br
+        b Hardware Components:<br>
+        | <i>Chassis</i>: The robot is built on a sturdy chassis that provides stability and maneuverability. It is equipped with wheels or tracks for smooth locomotion.<br>
+        | <i>Raspberry Pi</i>: The Raspberry Pi serves as the central control unit, responsible for processing data, executing algorithms, and interfacing with the robot's components.<br>
+        | <i>Camera</i>: A high-definition camera is mounted on a pan-tilt mechanism, allowing the robot to capture video and images from different angles and orientations.<br>
+        | <i>Sensors</i>: The robot is equipped with a range of sensors to gather environmental data, including ultrasonic sensors for obstacle detection, infrared sensors for distance measurement, and possibly additional sensors like temperature or gas sensors depending on the application requirements.<br>
+        | <i>Battery</i>: A rechargeable battery pack powers the robot, providing it with a sufficient operating time for surveillance missions.<br>
+        br
+        b Software and Functionality: <br>
+        | <i>ROS Framework</i>: The robot utilizes the ROS framework, which enables modular development, efficient communication between software components, and integration with a wide range of existing ROS packages.<br>
+        | <i>Perception</i>: The camera captures live video streams that are processed using computer vision algorithms. These algorithms enable the robot to detect and track objects of interest, perform face recognition, and identify potential threats or anomalies in the environment.<br>
+        | <i>Mapping and Localization</i>: The robot utilizes simultaneous localization and mapping (SLAM) techniques to build a map of its surroundings. This map helps the robot navigate autonomously and perform tasks efficiently.<br>
+        | <i>Navigation</i>: Using the sensor data and the map, the robot plans and executes its motion to patrol predefined areas or respond to specific events. It avoids obstacles, follows paths, and can be programmed with customized patrol routes.<br>
+        | <i>Communication</i>: The robot is capable of wireless communication, allowing it to transmit real-time video feeds, sensor data, and status updates to a remote control center. It can also receive commands and instructions remotely.<br>
+        | <i>Alert and Alarm Systems</i>: The surveillance robot can be equipped with audio or visual alert systems to deter potential intruders or notify human operators in case of suspicious activities or emergencies.<br>
+        br
+        b Applications: <br>
+        | <i>Security</i>: The surveillance robot can be deployed in public places, industrial facilities, or private properties to enhance security and monitor for potential threats.<br>
+        | <i>Patrol and Inspection</i>: It can autonomously patrol predefined routes, inspecting areas that are difficult for humans to access, such as underground tunnels or hazardous environments.<br>
+        | <i>Environmental Monitoring</i>: The robot can be equipped with additional sensors to monitor air quality, temperature, humidity, or detect gas leaks in industrial settings.<br>
+        | <i>Search and Rescue</i>: In emergency situations, the surveillance robot can assist in search and rescue missions, exploring hazardous environments or providing real-time situational awareness.<br>
+        br
+        | Overall, the surveillance mobile robot, powered by ROS and Raspberry Pi, combines advanced perception capabilities, autonomous navigation, and remote communication to provide an intelligent and adaptable solution for surveillance and monitoring tasks.<br>
+    
+
+  script(src="javascripts/charts.js") 
+  script(src="javascripts/scripts.js") 

@@ -1,0 +1,129 @@
+:root {
+  --color1: #192a56;
+}
+
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {color: #00B7FF;}
+
+#sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 70%;
+  background: var(--color1);
+  border-right: 2px solid var(--color1);
+}
+#sidebar .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px 0;
+  background-color: #333;
+  /* border-bottom: 1px solid #eeeeee3d; */
+}
+#sidebar .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee3d;
+  transition: all ease 200ms;
+  -webkit-transition: all ease 200ms;
+  -moz-transition: all ease 200ms;
+  -o-transition: all ease 200ms;
+}
+#sidebar .nav:hover {
+  color: var(--color1);
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee3d;
+  background-color: #fff;
+}
+#sidebar .nav span {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+#content {
+  padding: 20px ;
+}
+#content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #444;
+}
+#content .card {
+  background-color: #f4f4f4;
+}
+#content #power {
+  background-color: #ddd;
+}
+#content #power.on {
+  background-color: #99ff6d;
+}
+#content #alarm.on {
+  animation: flash 1s infinite;
+  color: #fff;
+}
+
+#content .camera {
+  width: 100%;
+  height: 280px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+#content #timer {
+  font-size: 45px;
+  font-weight: 600;
+  color: #444;
+}
+#content .graph {
+  height: 220px;
+  width: 100%;
+}
+#content .keys {
+  position: absolute;
+  right: 30px;
+  top: 8px;
+  font-size: 11px;
+}
+#content .keys span {
+  margin-left: 30px;
+  position: relative;
+}
+#content .keys span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: -12px;
+}
+#content .keys span.co2::after {background-color: #130f40}
+#content .keys span.lpg::after {background-color: #6ab04c}
+#content .keys span.ch4::after {background-color: #e056fd}
+
+.description {
+  line-height: 1.5;
+  font-size: 17px;
+}
+@keyframes flash {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: transparent;
+    color: #000;
+  }
+  100% {
+    background-color: red;
+  }
+}

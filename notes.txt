@@ -1,0 +1,10 @@
+------------------------------------------- Build Web Platform to monitor data from ROS --------------
+
+1. install nodejs
+2. install npm
+3. install express-generator
+4. express --view=pug --git
+5. npm install
+6. npm install roslib
+7. sudo apt-get install ros-noetic-rosbridge-server
+8. roslaunch rosbridge_server rosbridge_websocket.launch
